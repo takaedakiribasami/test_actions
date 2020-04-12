@@ -5,11 +5,8 @@ jobs:
   unit-test:
     name: Unit Test
     runs-on: ubuntu-latest
-    # container:
-    #   image: centos:latest
-    #   options: --cpus 1
     container:
-      image: takaedakiribasami/pn_generator:0.1
+      image: centos:latest
       options: --cpus 1
     steps:
       - name: Checkout
@@ -27,11 +24,8 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
-    # container:
-    #   image: centos:latest
-    #   options: --cpus 1
     container:
-      image: takaedakiribasami/pn_generator:0.1
+      image: centos:latest
       options: --cpus 1
     steps:
       - name: Checkout
